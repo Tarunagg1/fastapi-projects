@@ -1,0 +1,16 @@
+FROM python:3.12-slim
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+COPY . /app
+
+WORKDIR /app
+
+RUN uv sync --frozen --no-cache
+
+EXPOSE 80
+
+ENV PYTHONPATH=/app
+
+# Run the application.
+CMD ["uv", "run", "fastapi", "run", "main.py", "--port", "80", "--host", "0.0.0.0"]
