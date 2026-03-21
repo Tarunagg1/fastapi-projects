@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Broadcaster</title>
+
+    <script src="./static/index.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        background-color: lightgray;
+      }
+      .container {
+        width: 70%;
+        max-width: 750px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #fff;
+        position: relative;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .button,
+      .input {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .controls{
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      h1{
+        color: #444;
+      }
+
+
+      select, input[type="range"], input[type="number"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #status{
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #e9afaf;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Virtual camera controller</h1>
+      <div class="controls">
+        <div class="button">
+        <button onclick="getDevice()">List devices</button>
+        <button onclick="startStream()">Start Stream</button>
+        <button onclick="stopStream()">Stop stream</button>
+      </div>
+
+      <div class="input">
+        <label for="camera">Choose Camera</label>
+        <select id="camera"></select>
+
+        <label for="fps">FPS</label>
+        <input name="fps" id="fps" type="number" min="1" max="60" value="15"></input>
+
+        <label for="blur">Blur Strength (odd number)</label>
+        <input name="blur" id="blur" type="number" min="1" max="60" value="15"></input>
+      </div>
+      </div>
+      <div id="status">Status: Waiting for action...</div>
+    </div>
+  </body>
+</html>

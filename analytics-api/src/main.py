@@ -1,9 +1,19 @@
-from typing import Union
 from fastapi import FastAPI
 from api.events import router as evntRouter
+from contextlib import asynccontextmanager
+from api.db.session import init_db
 
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup code
+    print("Starting up...")
+    init_db()
+    yield
+    # Shutdown code
+    print("Shutting down...")
+
+app = FastAPI(lifespan=lifespan)
 
 app.include_router(evntRouter, prefix="/api/events", tags=["events"])
 

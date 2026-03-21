@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "price": 29.99,
+        "category": "Electronics",
+        "description": "Ergonomic wireless mouse with 2.4GHz connectivity",
+        "stock": 150
+    },
+    {
+        "id": 2,
+        "name": "Mechanical Keyboard",
+        "price": 89.99,
+        "category": "Electronics",
+        "description": "RGB mechanical keyboard with blue switches",
+        "stock": 85
+    },
+    {
+        "id": 3,
+        "name": "USB-C Hub",
+        "price": 45.50,
+        "category": "Electronics",
+        "description": "7-in-1 USB-C hub with HDMI and SD card reader",
+        "stock": 120
+    },
+    {
+        "id": 4,
+        "name": "Laptop Stand",
+        "price": 35.00,
+        "category": "Accessories",
+        "description": "Adjustable aluminum laptop stand",
+        "stock": 200
+    },
+    {
+        "id": 5,
+        "name": "Webcam HD",
+        "price": 65.99,
+        "category": "Electronics",
+        "description": "1080p HD webcam with built-in microphone",
+        "stock": 95
+    },
+    {
+        "id": 6,
+        "name": "Gaming Headset",
+        "price": 79.99,
+        "category": "Electronics",
+        "description": "7.1 surround sound gaming headset",
+        "stock": 110
+    },
+    {
+        "id": 7,
+        "name": "Phone Case",
+        "price": 15.99,
+        "category": "Accessories",
+        "description": "Protective silicone phone case",
+        "stock": 300
+    },
+    {
+        "id": 8,
+        "name": "Screen Protector",
+        "price": 9.99,
+        "category": "Accessories",
+        "description": "Tempered glass screen protector",
+        "stock": 250
+    },
+    {
+        "id": 9,
+        "name": "Power Bank 20000mAh",
+        "price": 39.99,
+        "category": "Electronics",
+        "description": "High capacity portable charger",
+        "stock": 175
+    },
+    {
+        "id": 10,
+        "name": "Bluetooth Speaker",
+        "price": 55.00,
+        "category": "Electronics",
+        "description": "Waterproof portable Bluetooth speaker",
+        "stock": 140
+    },
+    {
+        "id": 11,
+        "name": "Smart Watch",
+        "price": 199.99,
+        "category": "Electronics",
+        "description": "Fitness tracking smartwatch with heart rate monitor",
+        "stock": 60
+    },
+    {
+        "id": 12,
+        "name": "Wireless Earbuds",
+        "price": 89.99,
+        "category": "Electronics",
+        "description": "True wireless earbuds with noise cancellation",
+        "stock": 130
+    },
+    {
+        "id": 13,
+        "name": "Monitor 27 inch",
+        "price": 299.99,
+        "category": "Electronics",
+        "description": "4K UHD monitor with HDR support",
+        "stock": 45
+    },
+    {
+        "id": 14,
+        "name": "External SSD 1TB",
+        "price": 119.99,
+        "category": "Electronics",
+        "description": "Portable solid state drive",
+        "stock": 90
+    },
+    {
+        "id": 15,
+        "name": "HDMI Cable 6ft",
+        "price": 12.99,
+        "category": "Accessories",
+        "description": "High-speed HDMI 2.1 cable",
+        "stock": 400
+    },
+    {
+        "id": 16,
+        "name": "Desk Lamp LED",
+        "price": 42.50,
+        "category": "Office",
+        "description": "Adjustable LED desk lamp with USB charging",
+        "stock": 155
+    },
+    {
+        "id": 17,
+        "name": "Notebook Set",
+        "price": 18.99,
+        "category": "Office",
+        "description": "Set of 3 lined notebooks",
+        "stock": 220
+    },
+    {
+        "id": 18,
+        "name": "Pen Set",
+        "price": 14.99,
+        "category": "Office",
+        "description": "Premium ballpoint pen set of 10",
+        "stock": 280
+    },
+    {
+        "id": 19,
+        "name": "Desk Organizer",
+        "price": 24.99,
+        "category": "Office",
+        "description": "Bamboo desk organizer with compartments",
+        "stock": 165
+    },
+    {
+        "id": 20,
+        "name": "Mousepad XL",
+        "price": 19.99,
+        "category": "Accessories",
+        "description": "Extended gaming mousepad",
+        "stock": 190
+    },
+    {
+        "id": 21,
+        "name": "Cable Management Box",
+        "price": 16.50,
+        "category": "Accessories",
+        "description": "Hide and organize cables",
+        "stock": 145
+    },
+    {
+        "id": 22,
+        "name": "USB Flash Drive 64GB",
+        "price": 15.99,
+        "category": "Electronics",
+        "description": "USB 3.0 flash drive",
+        "stock": 320
+    },
+    {
+        "id": 23,
+        "name": "Wireless Charger",
+        "price": 25.99,
+        "category": "Electronics",
+        "description": "Fast wireless charging pad",
+        "stock": 180
+    },
+    {
+        "id": 24,
+        "name": "Phone Holder",
+        "price": 13.99,
+        "category": "Accessories",
+        "description": "Adjustable phone stand for desk",
+        "stock": 210
+    },
+    {
+        "id": 25,
+        "name": "Laptop Bag",
+        "price": 49.99,
+        "category": "Accessories",
+        "description": "Water-resistant laptop backpack",
+        "stock": 105
+    },
+    {
+        "id": 26,
+        "name": "Privacy Screen Filter",
+        "price": 32.99,
+        "category": "Accessories",
+        "description": "15.6 inch privacy screen protector",
+        "stock": 75
+    },
+    {
+        "id": 27,
+        "name": "Docking Station",
+        "price": 159.99,
+        "category": "Electronics",
+        "description": "Triple display docking station",
+        "stock": 55
+    },
+    {
+        "id": 28,
+        "name": "Cleaning Kit",
+        "price": 19.99,
+        "category": "Accessories",
+        "description": "Electronics cleaning kit with spray and cloth",
+        "stock": 195
+    },
+    {
+        "id": 29,
+        "name": "Cable Clips",
+        "price": 8.99,
+        "category": "Accessories",
+        "description": "Self-adhesive cable clips pack of 20",
+        "stock": 350
+    },
+    {
+        "id": 30,
+        "name": "Tablet Stand",
+        "price": 22.99,
+        "category": "Accessories",
+        "description": "Foldable tablet stand",
+        "stock": 170
+    },
+    {
+        "id": 31,
+        "name": "Surge Protector",
+        "price": 28.99,
+        "category": "Electronics",
+        "description": "6-outlet surge protector with USB ports",
+        "stock": 160
+    },
+    {
+        "id": 32,
+        "name": "Webcam Cover",
+        "price": 6.99,
+        "category": "Accessories",
+        "description": "Sliding webcam privacy cover",
+        "stock": 450
+    },
+    {
+        "id": 33,
+        "name": "Keyboard Wrist Rest",
+        "price": 17.99,
+        "category": "Accessories",
+        "description": "Memory foam wrist rest",
+        "stock": 185
+    },
+    {
+        "id": 34,
+        "name": "Monitor Arm",
+        "price": 89.99,
+        "category": "Accessories",
+        "description": "Gas spring monitor arm mount",
+        "stock": 70
+    },
+    {
+        "id": 35,
+        "name": "Graphics Tablet",
+        "price": 79.99,
+        "category": "Electronics",
+        "description": "Digital drawing tablet with pen",
+        "stock": 65
+    },
+    {
+        "id": 36,
+        "name": "Ring Light",
+        "price": 45.99,
+        "category": "Electronics",
+        "description": "10-inch LED ring light with tripod",
+        "stock": 125
+    },
+    {
+        "id": 37,
+        "name": "Microphone USB",
+        "price": 69.99,
+        "category": "Electronics",
+        "description": "Condenser microphone for streaming",
+        "stock": 88
+    },
+    {
+        "id": 38,
+        "name": "Green Screen",
+        "price": 54.99,
+        "category": "Electronics",
+        "description": "Collapsible green screen backdrop",
+        "stock": 92
+    },
+    {
+        "id": 39,
+        "name": "SD Card 128GB",
+        "price": 24.99,
+        "category": "Electronics",
+        "description": "High-speed microSD card",
+        "stock": 240
+    },
+    {
+        "id": 40,
+        "name": "Card Reader",
+        "price": 11.99,
+        "category": "Electronics",
+        "description": "Multi-format SD card reader",
+        "stock": 205
+    },
+    {
+        "id": 41,
+        "name": "Laptop Cooling Pad",
+        "price": 32.99,
+        "category": "Accessories",
+        "description": "Laptop cooling pad with fans",
+        "stock": 115
+    },
+    {
+        "id": 42,
+        "name": "VR Headset",
+        "price": 399.99,
+        "category": "Electronics",
+        "description": "Virtual reality gaming headset",
+        "stock": 35
+    },
+    {
+        "id": 43,
+        "name": "Drawing Pen Display",
+        "price": 449.99,
+        "category": "Electronics",
+        "description": "15.6-inch pen display for artists",
+        "stock": 28
+    },
+    {
+        "id": 44,
+        "name": "Bluetooth Adapter",
+        "price": 14.99,
+        "category": "Electronics",
+        "description": "USB Bluetooth 5.0 adapter",
+        "stock": 275
+    },
+    {
+        "id": 45,
+        "name": "Ethernet Cable 25ft",
+        "price": 15.99,
+        "category": "Accessories",
+        "description": "Cat 6 ethernet cable",
+        "stock": 230
+    },
+    {
+        "id": 46,
+        "name": "WiFi Range Extender",
+        "price": 39.99,
+        "category": "Electronics",
+        "description": "Dual-band WiFi extender",
+        "stock": 95
+    },
+    {
+        "id": 47,
+        "name": "Smart Plug",
+        "price": 19.99,
+        "category": "Electronics",
+        "description": "WiFi smart plug with voice control",
+        "stock": 200
+    },
+    {
+        "id": 48,
+        "name": "LED Strip Lights",
+        "price": 27.99,
+        "category": "Electronics",
+        "description": "RGB LED strip lights 16.4ft",
+        "stock": 165
+    },
+    {
+        "id": 49,
+        "name": "Security Camera",
+        "price": 79.99,
+        "category": "Electronics",
+        "description": "1080p indoor security camera",
+        "stock": 78
+    },
+    {
+        "id": 50,
+        "name": "Video Doorbell",
+        "price": 129.99,
+        "category": "Electronics",
+        "description": "Smart video doorbell with motion detection",
+        "stock": 52
+    },
+    {
+        "id": 51,
+        "name": "Smart Thermostat",
+        "price": 179.99,
+        "category": "Electronics",
+        "description": "WiFi programmable thermostat",
+        "stock": 42
+    },
+    {
+        "id": 52,
+        "name": "Door Sensor",
+        "price": 24.99,
+        "category": "Electronics",
+        "description": "Smart door/window sensor",
+        "stock": 155
+    },
+    {
+        "id": 53,
+        "name": "Motion Sensor",
+        "price": 22.99,
+        "category": "Electronics",
+        "description": "Smart motion detector",
+        "stock": 140
+    },
+    {
+        "id": 54,
+        "name": "Smart Light Bulb",
+        "price": 16.99,
+        "category": "Electronics",
+        "description": "WiFi RGB smart bulb",
+        "stock": 285
+    },
+    {
+        "id": 55,
+        "name": "Router AC1900",
+        "price": 99.99,
+        "category": "Electronics",
+        "description": "Dual-band wireless router",
+        "stock": 68
+    },
+    {
+        "id": 56,
+        "name": "Network Switch 8-Port",
+        "price": 34.99,
+        "category": "Electronics",
+        "description": "Gigabit ethernet switch",
+        "stock": 112
+    },
+    {
+        "id": 57,
+        "name": "KVM Switch",
+        "price": 45.99,
+        "category": "Electronics",
+        "description": "2-port HDMI KVM switch",
+        "stock": 85
+    },
+    {
+        "id": 58,
+        "name": "Label Maker",
+        "price": 34.99,
+        "category": "Office",
+        "description": "Portable label maker",
+        "stock": 98
+    },
+    {
+        "id": 59,
+        "name": "Paper Shredder",
+        "price": 69.99,
+        "category": "Office",
+        "description": "Cross-cut paper shredder",
+        "stock": 62
+    },
+    {
+        "id": 60,
+        "name": "Calculator",
+        "price": 19.99,
+        "category": "Office",
+        "description": "Scientific calculator",
+        "stock": 175
+    },
+    {
+        "id": 61,
+        "name": "Stapler",
+        "price": 12.99,
+        "category": "Office",
+        "description": "Heavy-duty stapler",
+        "stock": 245
+    },
+    {
+        "id": 62,
+        "name": "Hole Punch",
+        "price": 9.99,
+        "category": "Office",
+        "description": "3-hole punch",
+        "stock": 210
+    },
+    {
+        "id": 63,
+        "name": "Binder Clips",
+        "price": 7.99,
+        "category": "Office",
+        "description": "Assorted size binder clips",
+        "stock": 380
+    },
+    {
+        "id": 64,
+        "name": "Sticky Notes",
+        "price": 11.99,
+        "category": "Office",
+        "description": "Colorful sticky notes pack",
+        "stock": 420
+    },
+    {
+        "id": 65,
+        "name": "File Folders",
+        "price": 14.99,
+        "category": "Office",
+        "description": "Manila file folders pack of 50",
+        "stock": 310
+    },
+    {
+        "id": 66,
+        "name": "Desk Calendar",
+        "price": 16.99,
+        "category": "Office",
+        "description": "Monthly desk calendar 2026",
+        "stock": 125
+    },
+    {
+        "id": 67,
+        "name": "Whiteboard",
+        "price": 42.99,
+        "category": "Office",
+        "description": "Magnetic dry erase whiteboard",
+        "stock": 88
+    },
+    {
+        "id": 68,
+        "name": "Markers Set",
+        "price": 13.99,
+        "category": "Office",
+        "description": "Dry erase markers pack of 12",
+        "stock": 265
+    },
+    {
+        "id": 69,
+        "name": "Highlighters",
+        "price": 8.99,
+        "category": "Office",
+        "description": "Assorted color highlighters",
+        "stock": 340
+    },
+    {
+        "id": 70,
+        "name": "Tape Dispenser",
+        "price": 11.99,
+        "category": "Office",
+        "description": "Heavy-duty tape dispenser",
+        "stock": 195
+    },
+    {
+        "id": 71,
+        "name": "Scissors",
+        "price": 9.99,
+        "category": "Office",
+        "description": "Stainless steel scissors",
+        "stock": 255
+    },
+    {
+        "id": 72,
+        "name": "Ruler Set",
+        "price": 7.99,
+        "category": "Office",
+        "description": "Metal ruler set",
+        "stock": 280
+    },
+    {
+        "id": 73,
+        "name": "Pencil Sharpener",
+        "price": 6.99,
+        "category": "Office",
+        "description": "Electric pencil sharpener",
+        "stock": 160
+    },
+    {
+        "id": 74,
+        "name": "Eraser Pack",
+        "price": 5.99,
+        "category": "Office",
+        "description": "White erasers pack of 6",
+        "stock": 390
+    },
+    {
+        "id": 75,
+        "name": "Pencils Box",
+        "price": 12.99,
+        "category": "Office",
+        "description": "#2 pencils box of 24",
+        "stock": 325
+    },
+    {
+        "id": 76,
+        "name": "Correction Tape",
+        "price": 8.99,
+        "category": "Office",
+        "description": "Correction tape pack of 3",
+        "stock": 270
+    },
+    {
+        "id": 77,
+        "name": "Paper Clips",
+        "price": 6.99,
+        "category": "Office",
+        "description": "Jumbo paper clips box",
+        "stock": 410
+    },
+    {
+        "id": 78,
+        "name": "Rubber Bands",
+        "price": 5.99,
+        "category": "Office",
+        "description": "Assorted rubber bands",
+        "stock": 375
+    },
+    {
+        "id": 79,
+        "name": "Index Cards",
+        "price": 9.99,
+        "category": "Office",
+        "description": "Ruled index cards pack of 100",
+        "stock": 295
+    },
+    {
+        "id": 80,
+        "name": "Envelopes",
+        "price": 11.99,
+        "category": "Office",
+        "description": "White envelopes pack of 50",
+        "stock": 260
+    },
+    {
+        "id": 81,
+        "name": "Printer Paper",
+        "price": 29.99,
+        "category": "Office",
+        "description": "Copy paper 5 ream case",
+        "stock": 185
+    },
+    {
+        "id": 82,
+        "name": "Ink Cartridge Black",
+        "price": 34.99,
+        "category": "Office",
+        "description": "HP compatible ink cartridge",
+        "stock": 145
+    },
+    {
+        "id": 83,
+        "name": "Ink Cartridge Color",
+        "price": 39.99,
+        "category": "Office",
+        "description": "HP compatible color ink",
+        "stock": 130
+    },
+    {
+        "id": 84,
+        "name": "Photo Paper",
+        "price": 19.99,
+        "category": "Office",
+        "description": "Glossy photo paper 100 sheets",
+        "stock": 115
+    },
+    {
+        "id": 85,
+        "name": "Business Cards",
+        "price": 24.99,
+        "category": "Office",
+        "description": "Printable business cards",
+        "stock": 165
+    },
+    {
+        "id": 86,
+        "name": "Bookends",
+        "price": 18.99,
+        "category": "Office",
+        "description": "Metal bookends pair",
+        "stock": 135
+    },
+    {
+        "id": 87,
+        "name": "Magazine Holder",
+        "price": 15.99,
+        "category": "Office",
+        "description": "Desktop magazine organizer",
+        "stock": 155
+    },
+    {
+        "id": 88,
+        "name": "Letter Tray",
+        "price": 14.99,
+        "category": "Office",
+        "description": "Stackable letter tray",
+        "stock": 180
+    },
+    {
+        "id": 89,
+        "name": "Pen Holder",
+        "price": 10.99,
+        "category": "Office",
+        "description": "Mesh pen holder cup",
+        "stock": 225
+    },
+    {
+        "id": 90,
+        "name": "Clipboard",
+        "price": 8.99,
+        "category": "Office",
+        "description": "Hardboard clipboard",
+        "stock": 240
+    },
+    {
+        "id": 91,
+        "name": "Planner 2026",
+        "price": 22.99,
+        "category": "Office",
+        "description": "Weekly planner with notes",
+        "stock": 105
+    },
+    {
+        "id": 92,
+        "name": "Address Book",
+        "price": 13.99,
+        "category": "Office",
+        "description": "Leather address book",
+        "stock": 92
+    },
+    {
+        "id": 93,
+        "name": "Time Clock",
+        "price": 89.99,
+        "category": "Office",
+        "description": "Digital time clock system",
+        "stock": 45
+    },
+    {
+        "id": 94,
+        "name": "Document Camera",
+        "price": 159.99,
+        "category": "Electronics",
+        "description": "USB document camera for presentations",
+        "stock": 38
+    },
+    {
+        "id": 95,
+        "name": "Presentation Clicker",
+        "price": 24.99,
+        "category": "Electronics",
+        "description": "Wireless presentation remote",
+        "stock": 118
+    },
+    {
+        "id": 96,
+        "name": "Laser Pointer",
+        "price": 17.99,
+        "category": "Office",
+        "description": "Rechargeable laser pointer",
+        "stock": 145
+    },
+    {
+        "id": 97,
+        "name": "Badge Holder",
+        "price": 12.99,
+        "category": "Office",
+        "description": "ID badge holder with lanyard pack of 10",
+        "stock": 210
+    },
+    {
+        "id": 98,
+        "name": "Name Tags",
+        "price": 11.99,
+        "category": "Office",
+        "description": "Adhesive name tags pack of 100",
+        "stock": 235
+    },
+    {
+        "id": 99,
+        "name": "Storage Box",
+        "price": 16.99,
+        "category": "Office",
+        "description": "Plastic file storage box",
+        "stock": 175
+    },
+    {
+        "id": 100,
+        "name": "Rolling Cart",
+        "price": 54.99,
+        "category": "Office",
+        "description": "3-tier rolling storage cart",
+        "stock": 68
+    }
+]
