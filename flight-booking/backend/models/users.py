@@ -5,6 +5,8 @@ from datetime import datetime
 from sqlalchemy import Column, DateTime
 from sqlmodel import SQLModel, Field, Relationship
 from typing import TYPE_CHECKING
+from backend.models.permissions import UserGroup, UserPermission, Group, Permission
+
 
 
 class UserInDb(SQLModel, table=True):
@@ -19,3 +21,5 @@ class UserInDb(SQLModel, table=True):
     )
     is_active: bool = Field(default=True, nullable=False)
     is_superuser: bool = Field(default=False, nullable=False)
+    groups: list["Group"] = Relationship(back_populates="users", link_model=UserGroup)
+    permissions: list["Permission"] = Relationship(back_populates="users", link_model=UserPermission)
