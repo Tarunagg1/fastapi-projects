@@ -9,7 +9,7 @@ if __name__ == "__main__" or "backend" not in sys.modules:
         sys.path.insert(0, str(parent_dir))
 
 from fastapi import FastAPI
-from backend.routers import users
+from backend.routers import flights, users
 from contextlib import asynccontextmanager
 from backend.crud.database import init_db
 
@@ -24,6 +24,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 app.include_router(users.router, prefix="/users", tags=["users"])
+app.include_router(flights.router, prefix="/flights", tags=["flights"])
 
 
 @app.get("/")
@@ -34,7 +35,7 @@ def hello():
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 
 

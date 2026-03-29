@@ -1,0 +1,1236 @@
+2026-03-28 18:15:33,009 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:15:33,010 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:15:33,268 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:15:33,268 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:15:33,268 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:15:33,297 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:15:33,560 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:15:33,561 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:15:33,562 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:15:33,563 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:15:33,563 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:15:33,563 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:15:33,564 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:15:33,567 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:33,568 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00051s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:33,570 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:33,571 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003228s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:33,572 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:33,572 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004911s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:33,573 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:33,574 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.0064s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:33,575 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:33,576 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.0084s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:33,577 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:33,577 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.009956s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:33,578 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:15:35,044 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:15:35,045 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:15:35,326 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:15:35,326 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:15:35,326 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:15:35,351 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:15:35,590 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:15:35,591 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:15:35,592 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:15:35,592 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:15:35,593 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:15:35,593 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:15:35,594 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:15:35,598 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:35,598 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00067s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:35,601 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:35,601 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003725s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:35,602 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:35,603 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005483s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:35,604 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:35,604 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006989s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:35,605 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:35,606 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.008527s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:35,607 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:15:35,607 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.009744s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:15:35,608 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:15:38,776 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:15:38,776 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:15:39,827 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:15:39,827 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:16:04,080 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:16:04,080 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:16:04,667 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:16:04,667 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:16:14,816 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:16:14,816 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:26:41,117 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:26:41,118 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:28:01,199 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:28:01,199 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:28:02,422 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:28:02,422 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:28:24,212 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:28:24,213 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:33:49,831 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:33:49,831 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:12,935 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:12,935 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:17,990 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:17,990 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:18,676 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:18,677 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:24,154 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:24,154 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:24,156 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:42:24,399 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:42:24,400 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:42:24,400 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:42:24,426 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:42:24,663 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:42:24,664 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:24,665 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:42:24,665 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:24,666 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:42:24,666 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:24,667 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:42:24,670 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:24,671 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00057s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:24,673 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:24,673 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003129s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:24,674 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:24,674 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004265s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:24,675 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:24,675 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005291s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:24,676 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:24,677 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006345s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:24,677 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:24,678 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007367s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:24,678 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:42:25,386 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:25,386 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:25,389 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:42:25,634 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:42:25,635 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:42:25,635 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:42:25,661 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:42:25,896 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:42:25,897 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:25,898 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:42:25,898 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:25,899 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:42:25,899 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:25,900 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:42:25,903 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:25,903 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00050s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:25,905 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:25,905 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002968s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:25,907 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:25,907 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004476s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:25,908 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:25,908 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005502s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:25,909 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:25,909 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006695s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:25,910 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:25,910 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007889s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:25,911 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:42:26,654 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:26,655 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:26,657 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:42:26,908 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:42:26,908 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:42:26,909 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:42:26,936 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:42:27,181 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:42:27,181 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:27,182 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:42:27,183 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:27,184 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:42:27,184 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:27,185 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:42:27,188 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:27,188 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00053s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:27,190 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:27,190 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002689s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:27,191 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:27,191 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003783s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:27,192 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:27,192 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004649s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:27,193 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:27,193 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005579s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:27,194 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:27,194 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006579s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:27,195 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:42:47,467 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:47,467 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:47,471 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:42:47,786 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:42:47,787 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:42:47,787 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:42:47,815 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:42:48,081 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:42:48,082 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:48,083 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:42:48,083 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:48,083 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:42:48,084 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:48,084 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:42:48,087 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:48,088 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00070s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:48,090 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:48,091 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003782s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:48,092 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:48,092 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005176s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:48,094 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:48,094 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007061s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:48,095 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:48,096 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.008455s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:48,097 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:48,097 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01007s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:48,098 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:42:58,192 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:58,192 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:58,194 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:42:58,424 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:42:58,425 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:42:58,425 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:42:58,450 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:42:58,689 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:42:58,689 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:58,690 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:42:58,690 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:58,691 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:42:58,691 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:58,692 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:42:58,696 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:58,696 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00064s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:58,698 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:58,698 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002783s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:58,699 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:58,699 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003736s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:58,700 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:58,700 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004929s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:58,701 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:58,702 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006164s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:58,702 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:58,703 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007089s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:58,703 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:42:59,423 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:42:59,423 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:42:59,426 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:42:59,669 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:42:59,670 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:42:59,670 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:42:59,695 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:42:59,947 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:42:59,947 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:59,948 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:42:59,948 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:59,949 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:42:59,949 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:42:59,949 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:42:59,952 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:59,953 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00049s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:59,955 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:59,956 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003639s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:59,957 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:59,957 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004782s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:59,958 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:59,958 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006041s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:59,959 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:59,959 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007215s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:59,960 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:42:59,960 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.0081s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:42:59,961 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:43:12,328 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:43:12,328 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:43:12,331 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:43:12,583 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:43:12,583 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:43:12,584 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:43:12,610 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:43:12,839 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:43:12,839 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:12,841 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:43:12,841 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:12,841 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:43:12,841 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:12,842 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:43:12,845 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:12,845 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00051s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:12,847 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:12,847 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002436s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:12,848 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:12,848 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003514s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:12,849 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:12,849 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004766s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:12,850 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:12,851 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005967s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:12,851 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:12,852 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007024s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:12,853 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:43:13,822 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:43:13,822 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:43:13,825 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:43:14,081 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:43:14,082 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:43:14,082 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:43:14,107 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:43:14,464 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:43:14,464 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:14,465 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:43:14,465 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:14,466 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:43:14,466 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:14,467 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:43:14,470 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:14,471 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00056s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:14,472 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:14,473 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002897s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:14,474 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:14,474 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004006s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:14,475 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:14,475 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004896s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:14,476 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:14,476 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005974s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:14,477 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:14,477 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007218s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:14,478 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:43:19,843 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:43:19,843 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:43:19,845 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:43:20,100 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:43:20,100 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:43:20,100 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:43:20,127 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:43:20,371 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:43:20,371 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:20,372 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:43:20,373 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:20,373 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:43:20,374 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:20,374 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:43:20,378 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:20,378 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00045s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:20,380 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:20,380 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002747s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:20,381 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:20,382 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004201s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:20,383 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:20,383 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005408s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:20,384 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:20,384 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006787s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:20,385 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:20,385 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007839s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:20,386 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:43:31,067 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:43:31,067 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:43:31,070 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:43:31,306 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:43:31,306 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:43:31,306 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:43:31,332 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:43:31,566 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:43:31,567 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:31,568 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:43:31,568 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:31,569 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:43:31,570 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:43:31,570 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:43:31,573 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:31,574 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00041s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:31,575 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:31,576 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002388s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:31,576 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:31,577 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003325s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:31,577 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:31,578 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004218s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:31,578 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:31,578 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005035s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:31,579 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:43:31,579 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005957s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:43:31,580 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:44:13,650 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:44:13,650 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:44:13,653 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:44:13,919 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:44:13,919 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:44:13,920 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:44:13,947 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:44:14,191 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:44:14,192 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:44:14,193 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:44:14,193 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:44:14,194 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:44:14,194 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:44:14,194 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:44:14,197 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:14,198 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00054s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:14,200 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:14,200 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002997s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:14,201 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:14,201 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004339s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:14,202 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:14,202 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005242s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:14,203 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:14,203 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006374s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:14,204 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:14,205 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007505s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:14,205 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 18:44:17,130 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 18:44:17,130 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 18:44:17,133 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 18:44:17,390 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 18:44:17,390 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 18:44:17,391 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 18:44:17,417 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 18:44:17,659 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 18:44:17,659 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:44:17,661 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 18:44:17,661 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:44:17,661 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 18:44:17,662 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 18:44:17,662 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 18:44:17,665 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:17,665 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00058s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:17,667 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:17,668 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003343s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:17,669 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:17,670 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004956s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:17,671 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:17,671 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00634s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:17,672 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:17,673 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007699s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:17,674 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 18:44:17,674 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.009601s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 18:44:17,676 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 21:48:13,768 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 21:48:13,769 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 21:48:13,771 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 21:48:14,201 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 21:48:14,202 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 21:48:14,202 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 21:48:14,255 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 21:48:14,754 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 21:48:14,755 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:14,756 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 21:48:14,756 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:14,757 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 21:48:14,757 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:14,758 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 21:48:14,760 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:14,761 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00044s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:14,763 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:14,763 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002994s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:14,764 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:14,764 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004162s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:14,765 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:14,766 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005612s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:14,767 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:14,767 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006889s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:14,768 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:14,768 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007897s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:14,769 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 21:48:15,580 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 21:48:15,580 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 21:48:15,582 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 21:48:15,847 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 21:48:15,847 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 21:48:15,848 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 21:48:15,874 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 21:48:16,243 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 21:48:16,243 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:16,244 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 21:48:16,244 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:16,245 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 21:48:16,245 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:16,245 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 21:48:16,248 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:16,249 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00081s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:16,251 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:16,251 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00313s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:16,253 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:16,253 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004524s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:16,254 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:16,254 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005617s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:16,255 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:16,255 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006704s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:16,256 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:16,256 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007528s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:16,257 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 21:48:17,026 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 21:48:17,026 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 21:48:17,029 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 21:48:17,345 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 21:48:17,345 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 21:48:17,345 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 21:48:17,372 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 21:48:17,613 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 21:48:17,613 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:17,614 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 21:48:17,615 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:17,615 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 21:48:17,615 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:17,616 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 21:48:17,619 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:17,619 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00042s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:17,621 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:17,621 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002823s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:17,622 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:17,623 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004101s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:17,623 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:17,624 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005129s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:17,624 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:17,625 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006119s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:17,625 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:17,625 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007031s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:17,626 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 21:48:18,913 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 21:48:18,913 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 21:48:18,917 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 21:48:19,242 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 21:48:19,242 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 21:48:19,243 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 21:48:19,274 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 21:48:19,546 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 21:48:19,546 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:19,548 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 21:48:19,548 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:19,549 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 21:48:19,549 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 21:48:19,549 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 21:48:19,553 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:19,554 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00055s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:19,556 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:19,556 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003348s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:19,558 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:19,558 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005173s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:19,559 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:19,560 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006518s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:19,560 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:19,561 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007851s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:19,562 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 21:48:19,562 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.009029s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 21:48:19,563 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 22:47:02,323 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 22:47:02,323 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 22:47:02,327 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 22:47:02,849 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 22:47:02,850 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 22:47:02,850 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 22:47:02,914 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 22:47:03,379 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 22:47:03,379 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:03,380 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 22:47:03,380 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:03,381 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 22:47:03,381 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:03,382 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 22:47:03,384 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:03,385 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00056s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:03,387 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:03,387 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002835s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:03,388 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:03,388 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00397s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:03,389 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:03,389 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004801s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:03,390 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:03,390 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005669s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:03,391 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:03,391 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00657s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:03,392 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 22:47:09,442 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 22:47:09,442 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 22:47:09,445 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 22:47:09,726 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 22:47:09,726 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 22:47:09,726 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 22:47:09,763 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 22:47:10,019 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 22:47:10,020 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:10,020 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 22:47:10,021 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:10,021 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 22:47:10,021 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:10,022 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 22:47:10,025 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:10,026 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00052s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:10,027 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:10,028 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002935s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:10,029 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:10,029 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00397s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:10,030 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:10,030 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004884s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:10,030 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:10,031 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005775s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:10,032 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:10,032 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006912s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:10,033 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-28 22:47:10,818 | INFO | root | 69 |Root logger configured successfully
+2026-03-28 22:47:10,819 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-28 22:47:10,821 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-28 22:47:11,076 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-28 22:47:11,077 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-28 22:47:11,077 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-28 22:47:11,110 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-28 22:47:11,369 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-28 22:47:11,370 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:11,371 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-28 22:47:11,371 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:11,371 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-28 22:47:11,372 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-28 22:47:11,372 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-28 22:47:11,375 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:11,376 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00054s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:11,378 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:11,379 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003237s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:11,379 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:11,380 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004268s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:11,380 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:11,381 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005395s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:11,382 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:11,382 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006731s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:11,383 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-28 22:47:11,383 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007647s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-28 22:47:11,384 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:15:29,024 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:15:29,025 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:15:29,028 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:15:29,513 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:15:29,513 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:15:29,513 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:15:29,632 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:15:31,188 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:15:31,189 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:15:31,191 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:15:31,191 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:15:31,192 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:15:31,193 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:15:31,194 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:15:31,197 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:31,198 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00071s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:31,203 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:31,203 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005831s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:31,204 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:31,205 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007507s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:31,206 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:31,207 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.009352s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:31,208 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:31,208 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01081s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:31,209 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:31,210 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01221s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:31,211 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:15:39,567 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:15:39,568 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:15:39,572 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:15:39,950 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:15:39,951 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:15:39,951 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:15:39,987 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:15:40,507 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:15:40,508 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:15:40,509 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:15:40,510 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:15:40,511 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:15:40,512 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:15:40,513 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:15:40,518 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:40,519 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00078s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:40,522 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:40,523 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004409s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:40,525 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:40,525 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007093s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:40,527 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:40,527 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.009159s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:40,529 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:40,529 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01094s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:40,530 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:15:40,531 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01259s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:15:40,532 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:26:41,382 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:26:41,382 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:26:41,385 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:26:41,740 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:26:41,740 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:26:41,740 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:26:41,780 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:26:42,160 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:26:42,161 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:26:42,164 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:26:42,164 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:26:42,165 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:26:42,165 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:26:42,166 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:26:42,171 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:42,171 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00067s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:42,174 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:42,175 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004105s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:42,177 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:42,177 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006671s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:42,179 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:42,180 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.009177s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:42,181 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:42,182 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.011s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:42,183 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:42,184 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01291s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:42,185 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:26:43,701 | INFO | backend.external_services.flight | 58 |Amadeus FlightService search_flights
+2026-03-29 22:26:55,025 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:26:55,026 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:26:55,032 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:26:55,543 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:26:55,543 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:26:55,544 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:26:55,593 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:26:56,179 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:26:56,179 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:26:56,181 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:26:56,181 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:26:56,182 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:26:56,183 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:26:56,184 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:26:56,190 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:56,191 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00082s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:56,195 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:56,196 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006142s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:56,198 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:56,199 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00906s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:56,201 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:56,201 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01113s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:56,203 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:56,203 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.0133s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:56,205 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:26:56,206 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.01565s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:26:56,207 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:30:15,484 | INFO | backend.external_services.flight | 58 |Amadeus FlightService search_flights
+2026-03-29 22:30:47,209 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:30:47,210 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:30:47,212 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:30:47,483 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:30:47,484 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:30:47,484 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:30:47,513 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:30:47,844 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:30:47,844 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:47,846 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:30:47,846 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:47,847 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:30:47,847 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:47,848 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:30:47,852 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:47,852 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00057s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:47,854 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:47,854 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002929s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:47,855 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:47,856 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004256s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:47,857 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:47,857 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005405s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:47,858 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:47,858 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006483s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:47,859 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:47,859 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007867s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:47,860 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:30:48,734 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:30:48,734 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:30:48,737 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:30:49,004 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:30:49,004 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:30:49,005 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:30:49,033 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:30:49,394 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:30:49,394 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:49,396 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:30:49,396 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:49,397 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:30:49,397 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:49,398 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:30:49,401 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:49,401 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00051s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:49,404 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:49,404 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003349s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:49,405 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:49,405 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004503s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:49,406 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:49,406 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005427s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:49,407 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:49,407 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006538s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:49,408 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:49,409 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007802s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:49,410 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:30:53,335 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:30:53,336 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:30:53,338 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:30:53,610 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:30:53,610 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:30:53,610 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:30:53,639 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:30:54,011 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:30:54,011 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:54,013 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:30:54,013 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:54,014 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:30:54,014 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:30:54,015 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:30:54,018 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:54,019 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00047s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:54,021 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:54,021 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003199s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:54,022 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:54,023 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00434s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:54,023 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:54,024 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005315s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:54,024 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:54,025 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006435s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:54,025 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:30:54,026 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007577s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:30:54,027 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:31:15,542 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:31:15,542 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:31:15,546 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:31:15,830 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:31:15,831 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:31:15,831 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:31:15,860 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:31:16,175 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:31:16,175 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:31:16,176 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:31:16,177 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:31:16,177 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:31:16,178 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:31:16,179 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:31:16,182 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:31:16,182 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00066s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:31:16,184 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:31:16,184 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.002818s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:31:16,185 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:31:16,186 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00412s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:31:16,186 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:31:16,187 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.0053s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:31:16,187 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:31:16,188 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006279s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:31:16,188 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:31:16,189 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00725s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:31:16,189 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:32:13,406 | INFO | backend.external_services.flight | 58 |Amadeus FlightService search_flights
+2026-03-29 22:32:29,650 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:32:29,650 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:32:29,652 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:32:29,921 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:32:29,922 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:32:29,922 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:32:29,950 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:32:30,278 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:32:30,278 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:32:30,279 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:32:30,279 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:32:30,280 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:32:30,281 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:32:30,281 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:32:30,284 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:30,285 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00066s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:30,287 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:30,288 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003448s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:30,289 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:30,289 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004628s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:30,290 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:30,290 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.005793s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:30,291 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:30,292 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.007273s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:30,293 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:30,293 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.008894s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:30,294 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
+2026-03-29 22:32:31,127 | INFO | root | 69 |Root logger configured successfully
+2026-03-29 22:32:31,128 | INFO | fastapi_guard | 94 |Security logger configured successfully
+2026-03-29 22:32:31,130 | INFO | backend.external_services.flight | 16 |Amadeus FlightService initialized
+2026-03-29 22:32:31,392 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'SafeConfigParser': <class 'configparser.ConfigParser'>
+2026-03-29 22:32:31,392 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'NativeStringIO': <class '_io.StringIO'>
+2026-03-29 22:32:31,393 | DEBUG | passlib.utils.compat | 449 |loaded lazy attr 'BytesIO': <class '_io.BytesIO'>
+2026-03-29 22:32:31,421 | DEBUG | passlib.registry | 296 |registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2026-03-29 22:32:31,751 | INFO | sqlalchemy.engine.Engine | 1846 |select pg_catalog.version()
+2026-03-29 22:32:31,751 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:32:31,753 | INFO | sqlalchemy.engine.Engine | 1846 |select current_schema()
+2026-03-29 22:32:31,753 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:32:31,753 | INFO | sqlalchemy.engine.Engine | 1846 |show standard_conforming_strings
+2026-03-29 22:32:31,754 | INFO | sqlalchemy.engine.Engine | 1846 |[raw sql] {}
+2026-03-29 22:32:31,754 | INFO | sqlalchemy.engine.Engine | 2710 |BEGIN (implicit)
+2026-03-29 22:32:31,757 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:31,758 | INFO | sqlalchemy.engine.Engine | 1846 |[generated in 0.00063s] {'table_name': 'grouppermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:31,760 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:31,761 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.003391s ago] {'table_name': 'usergroup', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:31,762 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:31,762 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.004809s ago] {'table_name': 'userpermission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:31,763 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:31,763 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00585s ago] {'table_name': 'permission', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:31,764 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:31,764 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.006932s ago] {'table_name': 'group', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:31,765 | INFO | sqlalchemy.engine.Engine | 1846 |SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-03-29 22:32:31,766 | INFO | sqlalchemy.engine.Engine | 1846 |[cached since 0.00836s ago] {'table_name': 'userindb', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-03-29 22:32:31,767 | INFO | sqlalchemy.engine.Engine | 2716 |COMMIT
